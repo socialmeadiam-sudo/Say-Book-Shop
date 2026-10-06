@@ -1,0 +1,1573 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Say Book Shop — books, notebooks, pens, art supplies, school & office stationery at Central Commercial Area, Bahadurabad, Karachi. Visit or inquire on WhatsApp.">
+    <meta name="keywords" content="Say Book Shop, Bookstore Bahadurabad, Stationery Karachi, Books Karachi, School Supplies Bahadurabad, BMCHS Sharafabad Bookstore">
+    <meta name="author" content="Say Book Shop">
+    <meta name="theme-color" content="#2d1b12">
+
+    <meta property="og:title" content="Say Book Shop | Books & Stationery in Bahadurabad, Karachi">
+    <meta property="og:description" content="Your neighbourhood bookshop at Central Commercial Area, Bahadurabad, Karachi — books, notebooks, pens, art supplies, and school essentials.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80">
+
+    <title>Say Book Shop | Books & Stationery in Bahadurabad, Karachi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BookStore",
+      "name": "Say Book Shop",
+      "description": "Books, notebooks, pens, art supplies, school and office stationery at Central Commercial Area, Bahadurabad, Karachi.",
+      "telephone": "+923135851808",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Central Commercial Area, Bahadurabad, BMCHS Sharafabad",
+        "addressLocality": "Karachi",
+        "addressRegion": "Sindh",
+        "addressCountry": "Pakistan"
+      },
+      "url": "https://wa.me/923135851808"
+    }
+    </script>
+
+    <style>
+        :root {
+            /* === TERRA COTTA / INK EDITORIAL PALETTE === */
+            --ink: #2d1b12;
+            --ink-soft: #4a3427;
+            --ink-muted: #7a6455;
+            --terracotta: #c1502e;
+            --terracotta-dark: #9c3d21;
+            --terracotta-soft: rgba(193, 80, 46, 0.10);
+            --sand: #faf5ef;
+            --sand-deep: #f3e8dc;
+            --cream: #fffdf9;
+            --sage: #7a9471;
+            --sage-soft: rgba(122, 148, 113, 0.12);
+            --line: #ead9c8;
+            --line-dark: #d9c4ad;
+
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--sand);
+            color: var(--ink);
+            font-family: var(--font-body);
+            font-size: 15.5px;
+            line-height: 1.65;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            background-image:
+                radial-gradient(circle at 10% 0%, rgba(193, 80, 46, 0.04) 0%, transparent 40%),
+                radial-gradient(circle at 95% 30%, rgba(122, 148, 113, 0.05) 0%, transparent 35%);
+        }
+
+        a { color: inherit; text-decoration: none; transition: 0.35s var(--ease-out); }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; height: auto; }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.4px;
+            color: var(--ink);
+        }
+
+        .container { max-width: 1240px; margin: 0 auto; padding: 0 5%; }
+        .section { padding: 105px 0; position: relative; }
+        .section-tight { padding: 70px 0; }
+
+        /* ================= HEADER / NAV ================= */
+        .site-header {
+            position: fixed;
+            inset: 0 0 auto 0;
+            z-index: 900;
+            padding: 22px 5%;
+            transition: 0.5s var(--ease-out);
+            background: transparent;
+        }
+        .site-header.stuck {
+            padding: 12px 5%;
+            background: rgba(250, 245, 239, 0.92);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-bottom: 1px solid var(--line);
+        }
+        .header-inner {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--ink);
+            letter-spacing: -0.5px;
+        }
+        .logo-mark {
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            background: var(--ink);
+            color: var(--sand);
+            display: grid;
+            place-items: center;
+            font-size: 1rem;
+            transition: 0.5s var(--ease-back);
+            flex-shrink: 0;
+        }
+        .logo:hover .logo-mark { transform: rotate(-12deg) scale(1.06); background: var(--terracotta); }
+
+        .menu { display: flex; align-items: center; gap: 8px; }
+        .menu a {
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 9px 14px;
+            border-radius: 40px;
+            color: var(--ink-soft);
+            letter-spacing: 0.2px;
+        }
+        .menu a:hover, .menu a.on { background: var(--terracotta-soft); color: var(--terracotta-dark); }
+
+        .header-actions { display: flex; align-items: center; gap: 10px; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.86rem;
+            padding: 13px 26px;
+            border-radius: 44px;
+            border: 1.5px solid transparent;
+            cursor: pointer;
+            transition: 0.4s var(--ease-out);
+            white-space: nowrap;
+            letter-spacing: 0.2px;
+        }
+        .btn-ink { background: var(--ink); color: var(--sand); }
+        .btn-ink:hover { background: var(--terracotta); transform: translateY(-2px); box-shadow: 0 12px 26px rgba(193,80,46,0.3); }
+
+        .btn-clay {
+            background: var(--terracotta);
+            color: #fff;
+            box-shadow: 0 6px 18px rgba(193,80,46,0.25);
+        }
+        .btn-clay:hover { background: var(--terracotta-dark); transform: translateY(-2px); box-shadow: 0 14px 30px rgba(193,80,46,0.35); }
+
+        .btn-ghost { background: transparent; border-color: var(--line-dark); color: var(--ink); }
+        .btn-ghost:hover { border-color: var(--ink); background: var(--ink); color: var(--sand); }
+
+        .btn-wa { background: #20b95d; color: #fff; box-shadow: 0 6px 18px rgba(32,185,93,0.25); }
+        .btn-wa:hover { background: #189c4c; transform: translateY(-2px); }
+
+        .btn-sm { padding: 10px 18px; font-size: 0.8rem; }
+
+        .burger {
+            display: none;
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            border: 1.5px solid var(--line-dark);
+            background: transparent;
+            color: var(--ink);
+            font-size: 1.1rem;
+            cursor: pointer;
+            place-items: center;
+        }
+
+        /* Mobile drawer */
+        .drawer-bg {
+            position: fixed; inset: 0;
+            background: rgba(45, 27, 18, 0.55);
+            backdrop-filter: blur(6px);
+            opacity: 0; visibility: hidden;
+            transition: 0.4s var(--ease-out);
+            z-index: 950;
+        }
+        .drawer-bg.show { opacity: 1; visibility: visible; }
+
+        .drawer {
+            position: fixed;
+            top: 0; right: 0;
+            height: 100%;
+            width: 86%;
+            max-width: 340px;
+            background: var(--cream);
+            border-left: 1px solid var(--line);
+            z-index: 960;
+            padding: 84px 26px 30px;
+            transform: translateX(100%);
+            transition: 0.5s var(--ease-out);
+            display: flex; flex-direction: column; gap: 2px;
+            overflow-y: auto;
+        }
+        .drawer.show { transform: translateX(0); }
+        .drawer a.drawer-link {
+            padding: 15px 6px;
+            border-bottom: 1px solid var(--line);
+            font-size: 1rem;
+            color: var(--ink-soft);
+            font-weight: 500;
+        }
+        .drawer a.drawer-link:hover { color: var(--terracotta); padding-left: 14px; }
+        .drawer-x {
+            position: absolute; top: 22px; right: 22px;
+            width: 40px; height: 40px; border-radius: 50%;
+            border: none; background: var(--sand-deep);
+            color: var(--ink); cursor: pointer; font-size: 1.05rem;
+        }
+        .drawer-cta { margin-top: 22px; display: flex; flex-direction: column; gap: 10px; }
+
+        /* ================= HERO ================= */
+        .hero {
+            padding: 170px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 10px;
+            font-size: 0.72rem;
+            letter-spacing: 2.6px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--terracotta);
+            margin-bottom: 20px;
+        }
+        .eyebrow::before {
+            content: '';
+            width: 30px; height: 2px; background: var(--terracotta); border-radius: 2px;
+        }
+        .hero h1 {
+            font-size: clamp(2.4rem, 5vw, 3.9rem);
+            font-weight: 800;
+            line-height: 1.06;
+            margin-bottom: 22px;
+        }
+        .hero h1 em {
+            font-style: italic;
+            font-weight: 500;
+            color: var(--terracotta);
+            position: relative;
+        }
+        .hero h1 em::after {
+            content: '';
+            position: absolute;
+            left: 0; right: 0; bottom: 6px;
+            height: 10px;
+            background: var(--terracotta-soft);
+            z-index: -1;
+            border-radius: 4px;
+        }
+        .hero-lead {
+            color: var(--ink-muted);
+            font-size: 1.05rem;
+            max-width: 540px;
+            margin-bottom: 34px;
+            line-height: 1.75;
+        }
+        .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 34px; }
+        .hero-meta {
+            display: flex; flex-wrap: wrap; gap: 26px;
+            padding-top: 26px; border-top: 1px solid var(--line);
+        }
+        .meta-item { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: var(--ink-soft); font-weight: 500; }
+        .meta-item i { color: var(--terracotta); font-size: 0.95rem; }
+
+        .hero-visual { position: relative; }
+        .hero-frame {
+            position: relative;
+            border-radius: 220px 220px 26px 26px;
+            overflow: hidden;
+            box-shadow: 0 40px 80px rgba(45, 27, 18, 0.18);
+            border: 1px solid var(--line);
+        }
+        .hero-frame img { width: 100%; height: 540px; object-fit: cover; }
+
+        .sticker {
+            position: absolute;
+            background: var(--cream);
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 14px 20px;
+            box-shadow: 0 20px 45px rgba(45,27,18,0.12);
+            display: flex; align-items: center; gap: 12px;
+        }
+        .sticker i { font-size: 1.3rem; color: var(--terracotta); }
+        .sticker strong { display: block; font-family: var(--font-display); font-size: 0.98rem; color: var(--ink); }
+        .sticker small { font-size: 0.72rem; color: var(--ink-muted); letter-spacing: 0.4px; }
+        .sticker-a { bottom: 34px; left: -26px; animation: bob 5s ease-in-out infinite; }
+        .sticker-b { top: 40px; right: -22px; animation: bob 6s ease-in-out infinite reverse; }
+
+        @keyframes bob {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        /* ================= MARQUEE STRIP ================= */
+        .ribbon {
+            background: var(--ink);
+            color: var(--sand);
+            padding: 22px 0;
+            overflow: hidden;
+            border-top: 1px solid var(--ink-soft);
+            border-bottom: 1px solid var(--ink-soft);
+        }
+        .ribbon-track {
+            display: flex; gap: 60px;
+            white-space: nowrap;
+            animation: slide 28s linear infinite;
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            font-style: italic;
+        }
+        .ribbon-track span { display: inline-flex; align-items: center; gap: 60px; }
+        .ribbon-track i { color: var(--terracotta); font-size: 0.8rem; }
+        @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+        /* ================= SECTION HEADINGS ================= */
+        .head { max-width: 720px; margin-bottom: 60px; }
+        .head.center { margin-left: auto; margin-right: auto; text-align: center; }
+        .head.center .eyebrow { justify-content: center; }
+        .head.center .eyebrow::after {
+            content: ''; width: 30px; height: 2px; background: var(--terracotta); border-radius: 2px;
+        }
+        .head h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); margin-bottom: 16px; }
+        .head p { color: var(--ink-muted); font-size: 1rem; }
+
+        /* ================= SHELF (category strip) ================= */
+        .shelf { background: var(--cream); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+        .shelf-scroll {
+            display: flex; gap: 14px; overflow-x: auto;
+            padding: 6px 0 18px;
+            scrollbar-width: thin;
+        }
+        .shelf-scroll::-webkit-scrollbar { height: 6px; }
+        .shelf-scroll::-webkit-scrollbar-thumb { background: var(--line-dark); border-radius: 10px; }
+
+        .chip {
+            flex-shrink: 0;
+            padding: 11px 24px;
+            border-radius: 44px;
+            border: 1.5px solid var(--line-dark);
+            background: var(--cream);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--ink-soft);
+            cursor: pointer;
+            transition: 0.35s var(--ease-out);
+            white-space: nowrap;
+        }
+        .chip:hover { border-color: var(--terracotta); color: var(--terracotta-dark); transform: translateY(-2px); }
+        .chip.on {
+            background: var(--ink); border-color: var(--ink); color: var(--sand);
+            box-shadow: 0 10px 22px rgba(45,27,18,0.22);
+        }
+
+        /* ================= COLLECTION GRID ================= */
+        .collection {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+            gap: 30px;
+        }
+        .item {
+            background: var(--cream);
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: 0.5s var(--ease-out);
+            box-shadow: 0 4px 14px rgba(45,27,18,0.04);
+            position: relative;
+        }
+        .item.hidden { opacity: 0; transform: scale(0.94); pointer-events: none; }
+        .item:hover {
+            transform: translateY(-10px);
+            border-color: var(--terracotta);
+            box-shadow: 0 30px 55px rgba(193,80,46,0.14);
+        }
+        .item-photo {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+            background: var(--sand-deep);
+            cursor: pointer;
+        }
+        .item-photo img { width: 100%; height: 100%; object-fit: cover; transition: 0.8s var(--ease-out); }
+        .item:hover .item-photo img { transform: scale(1.07); }
+
+        .tag {
+            position: absolute; top: 14px; left: 14px;
+            background: rgba(45, 27, 18, 0.88);
+            color: #f5c451;
+            padding: 5px 13px;
+            border-radius: 30px;
+            font-size: 0.66rem;
+            font-weight: 700;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            backdrop-filter: blur(6px);
+        }
+
+        .item-body { padding: 24px; display: flex; flex-direction: column; flex-grow: 1; }
+        .item-body h3 { font-size: 1.16rem; margin-bottom: 9px; }
+        .item-body p { color: var(--ink-muted); font-size: 0.87rem; line-height: 1.65; margin-bottom: 20px; flex-grow: 1; }
+
+        .item-cta {
+            width: 100%;
+            padding: 12px;
+            border-radius: 40px;
+            border: 1.5px solid var(--line-dark);
+            background: transparent;
+            color: var(--ink);
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.82rem;
+            cursor: pointer;
+            transition: 0.4s var(--ease-out);
+            display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+        }
+        .item-cta:hover {
+            background: var(--ink); border-color: var(--ink); color: var(--sand);
+            transform: translateY(-2px);
+        }
+
+        /* ================= SPLIT FEATURE ================= */
+        .split { background: var(--sand-deep); }
+        .split-inner {
+            display: grid; grid-template-columns: 0.95fr 1.05fr;
+            gap: 62px; align-items: center;
+        }
+        .split-visual {
+            border-radius: 26px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            box-shadow: 0 30px 65px rgba(45,27,18,0.13);
+            position: relative;
+        }
+        .split-visual img { width: 100%; height: 480px; object-fit: cover; }
+
+        .feature-list { display: flex; flex-direction: column; gap: 22px; margin-top: 30px; }
+        .feature {
+            display: flex; gap: 18px; align-items: flex-start;
+            padding: 18px 20px;
+            background: var(--cream);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            transition: 0.4s var(--ease-out);
+        }
+        .feature:hover { border-color: var(--terracotta); transform: translateX(6px); }
+        .feature i {
+            flex-shrink: 0;
+            width: 42px; height: 42px; border-radius: 12px;
+            background: var(--terracotta-soft);
+            color: var(--terracotta);
+            display: grid; place-items: center;
+            font-size: 1rem;
+            transition: 0.4s var(--ease-back);
+        }
+        .feature:hover i { background: var(--terracotta); color: #fff; transform: rotate(-8deg); }
+        .feature h4 { font-size: 1rem; margin-bottom: 3px; }
+        .feature p { font-size: 0.85rem; color: var(--ink-muted); line-height: 1.6; }
+
+        /* ================= QUOTE BLOCK ================= */
+        .quote-block {
+            background: var(--ink);
+            color: var(--sand);
+            text-align: center;
+            padding: 90px 5%;
+            position: relative;
+            overflow: hidden;
+        }
+        .quote-block::before {
+            content: '\201C';
+            position: absolute;
+            top: 20px; left: 6%;
+            font-family: var(--font-display);
+            font-size: 16rem;
+            color: rgba(193,80,46,0.18);
+            line-height: 1;
+        }
+        .quote-block blockquote {
+            font-family: var(--font-display);
+            font-size: clamp(1.4rem, 3vw, 2.1rem);
+            font-style: italic;
+            font-weight: 500;
+            max-width: 780px;
+            margin: 0 auto 20px;
+            line-height: 1.35;
+            position: relative; z-index: 1;
+        }
+        .quote-block cite {
+            font-style: normal;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            font-weight: 700;
+        }
+
+        /* ================= BUILDER (inquiry) ================= */
+        .builder {
+            background: var(--cream);
+            border: 1px solid var(--line);
+            border-radius: 26px;
+            padding: 50px;
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: 0 25px 60px rgba(45,27,18,0.07);
+            position: relative;
+            overflow: hidden;
+        }
+        .builder::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; height: 5px;
+            background: repeating-linear-gradient(90deg, var(--terracotta) 0 18px, var(--sand-deep) 18px 36px);
+        }
+        .builder-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 22px;
+            margin-bottom: 26px;
+        }
+        .field { display: flex; flex-direction: column; gap: 8px; }
+        .field.full { grid-column: 1 / -1; }
+        .field label {
+            font-size: 0.73rem;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--ink-muted);
+        }
+        .field input, .field select, .field textarea {
+            font-family: var(--font-body);
+            font-size: 0.93rem;
+            padding: 13px 16px;
+            border: 1.5px solid var(--line-dark);
+            border-radius: 12px;
+            background: var(--sand);
+            color: var(--ink);
+            transition: 0.35s var(--ease-out);
+            width: 100%;
+        }
+        .field input:focus, .field select:focus, .field textarea:focus {
+            outline: none;
+            border-color: var(--terracotta);
+            background: #fff;
+            box-shadow: 0 0 0 4px var(--terracotta-soft);
+        }
+        .field textarea { resize: vertical; min-height: 96px; }
+
+        /* ================= FAQ (numbered) ================= */
+        .faq-cols { display: grid; gap: 14px; max-width: 860px; margin: 0 auto; }
+        .faq-row {
+            display: flex; gap: 20px;
+            background: var(--cream);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 4px 26px 4px 0;
+            transition: 0.4s var(--ease-out);
+            overflow: hidden;
+        }
+        .faq-row.open { border-color: var(--terracotta); box-shadow: 0 12px 30px rgba(193,80,46,0.08); }
+        .faq-num {
+            flex-shrink: 0;
+            width: 74px;
+            display: grid; place-items: center;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--line-dark);
+            border-right: 1px dashed var(--line);
+            transition: 0.4s var(--ease-out);
+            align-self: stretch;
+            padding: 22px 0;
+        }
+        .faq-row.open .faq-num { color: var(--terracotta); border-right-color: var(--terracotta-soft); }
+        .faq-content { flex-grow: 1; }
+        .faq-q {
+            width: 100%;
+            background: none; border: none;
+            text-align: left;
+            padding: 22px 0 22px 22px;
+            font-family: var(--font-body);
+            font-size: 0.98rem;
+            font-weight: 600;
+            color: var(--ink);
+            cursor: pointer;
+            display: flex; justify-content: space-between; align-items: center; gap: 16px;
+        }
+        .faq-q i { color: var(--terracotta); transition: 0.4s var(--ease-out); flex-shrink: 0; }
+        .faq-row.open .faq-q i { transform: rotate(45deg); }
+        .faq-a {
+            max-height: 0; overflow: hidden;
+            transition: max-height 0.45s var(--ease-out), padding 0.45s var(--ease-out);
+            padding: 0 0 0 22px;
+            color: var(--ink-muted);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        .faq-row.open .faq-a { max-height: 280px; padding: 0 0 22px 22px; }
+
+        /* ================= CONTACT ================= */
+        .contact-wrap {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 40px;
+        }
+        .info-card, .form-card {
+            background: var(--cream);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            padding: 42px;
+            position: relative;
+            overflow: hidden;
+        }
+        .info-card { background: var(--ink); color: var(--sand); border-color: var(--ink-soft); }
+        .info-card h3 { color: var(--sand); font-size: 1.5rem; margin-bottom: 8px; }
+        .info-card .sub { color: rgba(250,245,239,0.65); font-size: 0.88rem; margin-bottom: 30px; }
+
+        .info-line { display: flex; gap: 16px; margin-bottom: 22px; align-items: flex-start; }
+        .info-line i {
+            flex-shrink: 0;
+            width: 44px; height: 44px;
+            border-radius: 13px;
+            background: rgba(193,80,46,0.22);
+            color: #f5b79e;
+            display: grid; place-items: center;
+            font-size: 1rem;
+            transition: 0.4s var(--ease-back);
+        }
+        .info-line:hover i { background: var(--terracotta); color: #fff; transform: rotate(-8deg); }
+        .info-line h5 {
+            font-family: var(--font-body);
+            font-size: 0.72rem;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+        .info-line p, .info-line a { color: rgba(250,245,239,0.9); font-size: 0.92rem; line-height: 1.6; }
+        .info-line a:hover { color: #f5b79e; }
+
+        .form-card h3 { font-size: 1.5rem; margin-bottom: 8px; }
+        .form-card .sub { color: var(--ink-muted); font-size: 0.88rem; margin-bottom: 28px; }
+
+        .notice {
+            display: none;
+            padding: 14px 18px;
+            border-radius: 12px;
+            font-size: 0.87rem;
+            margin-bottom: 20px;
+            border: 1px solid;
+        }
+        .notice.ok { display: block; background: var(--sage-soft); border-color: rgba(122,148,113,0.4); color: #4b6a43; }
+
+        /* ================= FOOTER ================= */
+        .site-footer {
+            background: var(--ink);
+            color: rgba(250,245,239,0.75);
+            padding: 80px 0 26px;
+            position: relative;
+        }
+        .site-footer::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; height: 4px;
+            background: repeating-linear-gradient(90deg, var(--terracotta) 0 22px, #5a3a29 22px 44px);
+        }
+        .foot-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+            gap: 44px;
+            padding-bottom: 48px;
+            border-bottom: 1px solid rgba(250,245,239,0.1);
+        }
+        .foot-brand .logo { color: var(--sand); margin-bottom: 18px; }
+        .foot-brand .logo-mark { background: var(--terracotta); color: #fff; }
+        .foot-brand p { font-size: 0.88rem; line-height: 1.7; max-width: 300px; }
+
+        .foot-col h4 {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .foot-col li { margin-bottom: 11px; }
+        .foot-col a, .foot-col p { font-size: 0.87rem; color: rgba(250,245,239,0.75); }
+        .foot-col a:hover { color: #fff; padding-left: 5px; }
+
+        .foot-bottom {
+            padding-top: 24px;
+            display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 12px;
+            font-size: 0.8rem;
+            color: rgba(250,245,239,0.5);
+        }
+
+        /* ================= MODAL ================= */
+        .lightbox {
+            position: fixed; inset: 0;
+            background: rgba(45,27,18,0.9);
+            backdrop-filter: blur(10px);
+            z-index: 2000;
+            display: grid; place-items: center;
+            padding: 20px;
+            opacity: 0; visibility: hidden;
+            transition: 0.4s var(--ease-out);
+        }
+        .lightbox.show { opacity: 1; visibility: visible; }
+        .lightbox-card {
+            background: var(--cream);
+            border-radius: 22px;
+            overflow: hidden;
+            max-width: 660px; width: 100%;
+            transform: scale(0.94);
+            transition: 0.5s var(--ease-back);
+            position: relative;
+        }
+        .lightbox.show .lightbox-card { transform: scale(1); }
+        .lightbox-card img { width: 100%; height: 320px; object-fit: cover; }
+        .lightbox-body { padding: 28px; }
+        .lightbox-body h3 { font-size: 1.4rem; margin-bottom: 8px; }
+        .lightbox-body p { color: var(--ink-muted); font-size: 0.9rem; margin-bottom: 20px; }
+        .lightbox-x {
+            position: absolute; top: 14px; right: 14px;
+            width: 40px; height: 40px; border-radius: 50%;
+            background: rgba(45,27,18,0.75); color: #fff;
+            border: none; cursor: pointer; font-size: 1rem;
+            transition: 0.4s var(--ease-back);
+        }
+        .lightbox-x:hover { background: var(--terracotta); transform: rotate(90deg); }
+
+        /* ================= TO TOP ================= */
+        .to-top {
+            position: fixed; bottom: 28px; right: 28px;
+            width: 50px; height: 50px; border-radius: 50%;
+            background: var(--ink); color: var(--sand);
+            border: none; cursor: pointer;
+            display: grid; place-items: center;
+            font-size: 1rem;
+            z-index: 800;
+            opacity: 0; visibility: hidden; transform: translateY(14px);
+            transition: 0.45s var(--ease-out);
+            box-shadow: 0 12px 30px rgba(45,27,18,0.3);
+        }
+        .to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+        .to-top:hover { background: var(--terracotta); transform: translateY(-4px); }
+
+        /* ================= REVEAL ================= */
+        .rv { opacity: 0; transform: translateY(34px); transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out); }
+        .rv.in { opacity: 1; transform: translateY(0); }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 1080px) {
+            .hero-inner, .split-inner, .contact-wrap { grid-template-columns: 1fr; gap: 45px; }
+            .hero-frame img { height: 420px; }
+            .split-visual img { height: 380px; }
+            .sticker-a { left: 10px; bottom: 20px; }
+            .sticker-b { right: 10px; top: 20px; }
+            .foot-grid { grid-template-columns: 1fr 1fr; gap: 34px; }
+            .section { padding: 80px 0; }
+        }
+
+        @media (max-width: 860px) {
+            .menu, .header-actions { display: none; }
+            .burger { display: grid; }
+            .hero { padding: 140px 0 70px; }
+            .builder { padding: 34px 22px; }
+            .info-card, .form-card { padding: 32px 26px; }
+        }
+
+        @media (max-width: 620px) {
+            body { font-size: 15px; }
+            .hero h1 { font-size: 2.1rem; }
+            .hero-cta .btn { width: 100%; }
+            .hero-meta { gap: 16px; }
+            .collection { grid-template-columns: 1fr; }
+            .foot-grid { grid-template-columns: 1fr; }
+            .foot-bottom { flex-direction: column; text-align: center; }
+            .faq-num { width: 56px; font-size: 1.2rem; }
+            .faq-q { padding: 18px 0 18px 16px; font-size: 0.92rem; }
+            .faq-a { padding-left: 16px; }
+            .faq-row.open .faq-a { padding: 0 0 18px 16px; }
+            .section { padding: 64px 0; }
+            .head { margin-bottom: 40px; }
+            .builder-grid { grid-template-columns: 1fr; }
+            .sticker { display: none; }
+            .ribbon-track { font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="to-top" id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <a href="#top" class="logo">
+                <span class="logo-mark"><i class="fa-solid fa-feather-pointed"></i></span>
+                Say Book Shop
+            </a>
+
+            <nav class="menu">
+                <a href="#top" class="on">Home</a>
+                <a href="#shelves">Collection</a>
+                <a href="#story">Our Story</a>
+                <a href="#builder">Inquiry</a>
+                <a href="#faq">FAQ</a>
+                <a href="#visit">Visit</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+923135851808" class="btn btn-ghost btn-sm"><i class="fa-solid fa-phone"></i> Call</a>
+                <a href="https://wa.me/923135851808" target="_blank" rel="noopener" class="btn btn-clay btn-sm"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </div>
+
+            <button class="burger" id="burger" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE DRAWER ===== -->
+    <div class="drawer-bg" id="drawerBg" onclick="closeDrawer()"></div>
+    <aside class="drawer" id="drawer">
+        <button class="drawer-x" onclick="closeDrawer()" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        <a href="#top" class="drawer-link" onclick="closeDrawer()">Home</a>
+        <a href="#shelves" class="drawer-link" onclick="closeDrawer()">Collection</a>
+        <a href="#story" class="drawer-link" onclick="closeDrawer()">Our Story</a>
+        <a href="#builder" class="drawer-link" onclick="closeDrawer()">Inquiry Builder</a>
+        <a href="#faq" class="drawer-link" onclick="closeDrawer()">FAQ</a>
+        <a href="#visit" class="drawer-link" onclick="closeDrawer()">Visit / Contact</a>
+        <div class="drawer-cta">
+            <a href="tel:+923135851808" class="btn btn-ink"><i class="fa-solid fa-phone"></i> 0313 585 1808</a>
+            <a href="https://wa.me/923135851808" target="_blank" rel="noopener" class="btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+        </div>
+    </aside>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-copy rv">
+                    <span class="eyebrow">Bahadurabad · Karachi</span>
+                    <h1>Where readers, students and <em>writers</em> find everything they need.</h1>
+                    <p class="hero-lead">
+                        Say Book Shop is your neighbourhood bookshop at Central Commercial Area, Bahadurabad.
+                        Browse course books, notebooks, pens, art supplies and school essentials — then
+                        message us on WhatsApp for a fast stock check.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="https://wa.me/923135851808" target="_blank" rel="noopener" class="btn btn-clay">
+                            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <a href="#shelves" class="btn btn-ghost">Browse Collection <i class="fa-solid fa-arrow-down"></i></a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <div class="meta-item"><i class="fa-solid fa-location-dot"></i> BMCHS Sharafabad, Karachi</div>
+                        <div class="meta-item"><i class="fa-solid fa-book"></i> Books · Stationery · Art</div>
+                        <div class="meta-item"><i class="fa-solid fa-bolt"></i> Quick WhatsApp Replies</div>
+                    </div>
+                </div>
+
+                <div class="hero-visual rv">
+                    <div class="hero-frame">
+                        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=80"
+                             alt="Bookshelves filled with books at Say Book Shop in Bahadurabad, Karachi"
+                             onclick="openLightbox('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1400&q=80','Say Book Shop Shelves','A wide range of academic and leisure books available at our Bahadurabad store.')">
+                    </div>
+                    <div class="sticker sticker-a">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <div>
+                            <strong>Say Book Shop</strong>
+                            <small>Central Commercial Area, Bahadurabad</small>
+                        </div>
+                    </div>
+                    <div class="sticker sticker-b">
+                        <i class="fa-solid fa-star"></i>
+                        <div>
+                            <strong>School &amp; Office</strong>
+                            <small>Complete stationery range</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RIBBON ===== -->
+    <div class="ribbon" aria-hidden="true">
+        <div class="ribbon-track">
+            <span>
+                Course Books <i class="fa-solid fa-circle"></i>
+                Notebooks &amp; Registers <i class="fa-solid fa-circle"></i>
+                Pens &amp; Pencils <i class="fa-solid fa-circle"></i>
+                Art Supplies <i class="fa-solid fa-circle"></i>
+                Office Files <i class="fa-solid fa-circle"></i>
+                Exam Papers <i class="fa-solid fa-circle"></i>
+            </span>
+            <span>
+                Course Books <i class="fa-solid fa-circle"></i>
+                Notebooks &amp; Registers <i class="fa-solid fa-circle"></i>
+                Pens &amp; Pencils <i class="fa-solid fa-circle"></i>
+                Art Supplies <i class="fa-solid fa-circle"></i>
+                Office Files <i class="fa-solid fa-circle"></i>
+                Exam Papers <i class="fa-solid fa-circle"></i>
+            </span>
+        </div>
+    </div>
+
+    <!-- ===== COLLECTION ===== -->
+    <section class="section" id="shelves">
+        <div class="container">
+            <div class="head center rv">
+                <span class="eyebrow">Browse the Shelves</span>
+                <h2>Our Collection</h2>
+                <p>Filter by category to explore what we keep in stock at the shop. Every item can be inquired about instantly on WhatsApp.</p>
+            </div>
+
+            <div class="shelf-scroll rv" style="justify-content:center; flex-wrap:wrap; overflow:visible;">
+                <button class="chip on" data-filter="all" onclick="applyFilter('all')">All Items</button>
+                <button class="chip" data-filter="books" onclick="applyFilter('books')">Books</button>
+                <button class="chip" data-filter="notebooks" onclick="applyFilter('notebooks')">Notebooks</button>
+                <button class="chip" data-filter="writing" onclick="applyFilter('writing')">Pens &amp; Writing</button>
+                <button class="chip" data-filter="school" onclick="applyFilter('school')">School Supplies</button>
+                <button class="chip" data-filter="office" onclick="applyFilter('office')">Office</button>
+                <button class="chip" data-filter="art" onclick="applyFilter('art')">Art &amp; Craft</button>
+            </div>
+
+            <div class="collection" id="collectionGrid" style="margin-top:46px;">
+
+                <article class="item rv" data-cat="books school">
+                    <div class="item-photo" onclick="openLightbox('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1200&q=80','Course & Syllabus Books','Textbooks and guides for primary through higher secondary classes.')">
+                        <span class="tag">Books</span>
+                        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80" alt="Stack of course textbooks">
+                    </div>
+                    <div class="item-body">
+                        <h3>Course &amp; Syllabus Books</h3>
+                        <p>Textbooks, guides and workbooks for primary, secondary and higher secondary classes.</p>
+                        <button class="item-cta" onclick="inquire('Course & Syllabus Books')"><i class="fa-brands fa-whatsapp"></i> Inquire</button>
+                    </div>
+                </article>
+
+                <article class="item rv" data-cat="notebooks school office">
+                    <div class="item-photo" onclick="openLightbox('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80','Notebooks & Registers','Lined, plain and grid registers in a variety of page counts.')">
+                        <span class="tag">Notebooks</span>
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80" alt="Open lined notebooks">
+                    </div>
+                    <div class="item-body">
+                        <h3>Notebooks &amp; Registers</h3>
+                        <p>Lined copies, practical registers, spiral pads, graph books and rough-work journals.</p>
+                        <button class="item-cta" onclick="inquire('Notebooks & Registers')"><i class="fa-brands fa-whatsapp"></i> Inquire</button>
+                    </div>
+                </article>
+
+
+                <article class="item rv" data-cat="school">
+                    <div class="item-photo" onclick="openLightbox('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80','School Accessories','Geometry boxes, scales, erasers, sharpeners and pencil cases.')">
+                        <span class="tag">School</span>
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="School accessories like erasers and sharpeners">
+                    </div>
+                    <div class="item-body">
+                        <h3>School Accessories</h3>
+                        <p>Geometry boxes, rulers, erasers, sharpeners, pencil cases, book covers and more.</p>
+                        <button class="item-cta" onclick="inquire('School Accessories')"><i class="fa-brands fa-whatsapp"></i> Inquire</button>
+                    </div>
+                </article>
+
+                <article class="item rv" data-cat="office">
+                    <div class="item-photo" onclick="openLightbox('https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=1200&q=80','Office Files & Desk Supplies','Folders, files, staplers, clips and sticky notes.')">
+                        <span class="tag">Office</span>
+                        <img src="https://images.unsplash.com/photo-1584628804572-f84284d9f388?auto=format&fit=crop&w=600&q=80" alt="Office desk supplies">
+                    </div>
+                    <div class="item-body">
+                        <h3>Office Files &amp; Supplies</h3>
+                        <p>Ring files, document wallets, staplers, paper clips, sticky notes and desk organizers.</p>
+                        <button class="item-cta" onclick="inquire('Office Files & Supplies')"><i class="fa-brands fa-whatsapp"></i> Inquire</button>
+                    </div>
+                </article>
+
+                <article class="item rv" data-cat="art school">
+                    <div class="item-photo" onclick="openLightbox('https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=80','Art & Craft Materials','Paints, brushes, color pencils and craft sheets.')">
+                        <span class="tag">Art</span>
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80" alt="Art supplies with paints and brushes">
+                    </div>
+                    <div class="item-body">
+                        <h3>Art &amp; Craft Materials</h3>
+                        <p>Color pencils, sketch pads, poster colors, brushes, clay sets and craft papers.</p>
+                        <button class="item-cta" onclick="inquire('Art & Craft Materials')"><i class="fa-brands fa-whatsapp"></i> Inquire</button>
+                    </div>
+                </article>
+
+                <article class="item rv" data-cat="books">
+                    <div class="item-photo" onclick="openLightbox('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80','Leisure & Story Books','Storybooks and general reading titles.')">
+                        <span class="tag">Books</span>
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80" alt="General reading books on a table">
+                    </div>
+                    <div class="item-body">
+                        <h3>Leisure &amp; Story Books</h3>
+                        <p>Children's stories, general knowledge titles, motivational and everyday reading books.</p>
+                        <button class="item-cta" onclick="inquire('Leisure & Story Books')"><i class="fa-brands fa-whatsapp"></i> Inquire</button>
+                    </div>
+                </article>
+
+                <article class="item rv" data-cat="books school">
+                    <div class="item-photo" onclick="openLightbox('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80','Exam & Test Papers','Practice papers and solved past papers.')">
+                        <span class="tag">Books</span>
+                        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=600&q=80" alt="Study desk with exam practice papers">
+                    </div>
+                    <div class="item-body">
+                        <h3>Exam &amp; Test Papers</h3>
+                        <p>Past papers, solved papers, model test sheets and revision notes for exam preparation.</p>
+                        <button class="item-cta" onclick="inquire('Exam & Test Papers')"><i class="fa-brands fa-whatsapp"></i> Inquire</button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SPLIT / STORY ===== -->
+    <section class="section split" id="story">
+        <div class="container">
+            <div class="split-inner">
+                <div class="split-visual rv">
+                    <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=900&q=80"
+                         alt="Books and stationery laid out on a table at Say Book Shop"
+                         onclick="openLightbox('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1400&q=80','Inside Say Book Shop','Everything from reading books to writing tools under one roof in Bahadurabad.')">
+                </div>
+
+                <div class="rv">
+                    <span class="eyebrow">Our Story</span>
+                    <h2 style="font-size:clamp(1.9rem,3.2vw,2.5rem); margin-bottom:16px;">A local shop built around readers &amp; learners</h2>
+                    <p style="color:var(--ink-muted); margin-bottom:6px;">
+                        Say Book Shop has been serving families, students and offices around Bahadurabad with
+                        books, writing materials and everyday stationery. Whether it's the start of a new
+                        school term or a last-minute office need, we aim to make it simple to find what you're
+                        looking for — in store, or through a quick WhatsApp message.
+                    </p>
+
+                    <div class="feature-list">
+                        <div class="feature">
+                            <i class="fa-solid fa-store"></i>
+                            <div>
+                                <h4>One-Stop Shop</h4>
+                                <p>Books, notebooks, pens and office supplies all under a single roof.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <h4>Student Focused</h4>
+                                <p>Syllabus books, test papers and study essentials for every class level.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-comments"></i>
+                            <div>
+                                <h4>Fast WhatsApp Inquiry</h4>
+                                <p>Send your list and get a quick reply about availability and pricing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUOTE ===== -->
+    <section class="quote-block">
+        <blockquote>“A bookshop is a quiet promise that knowledge will always find a way home.”</blockquote>
+        <cite>Say Book Shop — Bahadurabad, Karachi</cite>
+    </section>
+
+    <!-- ===== BUILDER ===== -->
+    <section class="section" id="builder" style="background: var(--sand-deep);">
+        <div class="container">
+            <div class="head center rv">
+                <span class="eyebrow">Inquiry Builder</span>
+                <h2>Build Your WhatsApp Inquiry</h2>
+                <p>Fill in the details below and we'll generate a formatted message you can send to us in one tap.</p>
+            </div>
+
+            <div class="builder rv">
+                <form id="builderForm" onsubmit="sendBuilder(event)">
+                    <div class="builder-grid">
+                        <div class="field">
+                            <label for="bCat">Category</label>
+                            <select id="bCat" required>
+                                <option value="Course / Syllabus Books">Course / Syllabus Books</option>
+                                <option value="Notebooks & Registers">Notebooks &amp; Registers</option>
+                                <option value="Pens & Writing Items">Pens &amp; Writing Items</option>
+                                <option value="School Accessories">School Accessories</option>
+                                <option value="Office Files & Supplies">Office Files &amp; Supplies</option>
+                                <option value="Art & Craft Materials">Art &amp; Craft Materials</option>
+                                <option value="Leisure & Story Books">Leisure &amp; Story Books</option>
+                                <option value="Exam & Test Papers">Exam &amp; Test Papers</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="bItem">Item / Subject Name</label>
+                            <input type="text" id="bItem" placeholder="e.g. Class 9 Physics, A4 Register, Gel Pen" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="bQty">Quantity</label>
+                            <input type="number" id="bQty" min="1" value="1" required>
+                        </div>
+
+                        <div class="field full">
+                            <label for="bNote">Extra Notes (brand, colour, publisher, class)</label>
+                            <textarea id="bNote" rows="3" placeholder="Any specific brand or preference you'd like us to check..."></textarea>
+                        </div>
+                    </div>
+
+                    <div style="text-align:center;">
+                        <button type="submit" class="btn btn-clay" style="padding:16px 38px;">
+                            <i class="fa-brands fa-whatsapp" style="font-size:1.1rem;"></i> Generate &amp; Send Inquiry
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="head center rv">
+                <span class="eyebrow">Good to Know</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers about visiting, stock checks and what we keep in store.</p>
+            </div>
+
+            <div class="faq-cols">
+                <div class="faq-row rv">
+                    <div class="faq-num">01</div>
+                    <div class="faq-content">
+                        <button class="faq-q" onclick="toggleFaq(this)">
+                            Where exactly is Say Book Shop located? <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="faq-a">
+                            We are at Central Commercial Area, Bahadurabad, BMCHS Sharafabad, Karachi — easily
+                            reachable from the main Bahadurabad commercial strip.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-row rv">
+                    <div class="faq-num">02</div>
+                    <div class="faq-content">
+                        <button class="faq-q" onclick="toggleFaq(this)">
+                            What kind of books do you keep? <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="faq-a">
+                            Course and syllabus textbooks, workbooks, handwriting copies, children's storybooks,
+                            exam practice papers and general reading titles.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-row rv">
+                    <div class="faq-num">03</div>
+                    <div class="faq-content">
+                        <button class="faq-q" onclick="toggleFaq(this)">
+                            Can I check if an item is available before visiting? <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="faq-a">
+                            Yes. Send us a WhatsApp message at 0313 585 1808 with the item name, or use the
+                            Inquiry Builder on this page. We'll reply with availability and pricing.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-row rv">
+                    <div class="faq-num">04</div>
+                    <div class="faq-content">
+                        <button class="faq-q" onclick="toggleFaq(this)">
+                            Do you supply stationery for offices and institutions? <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="faq-a">
+                            Yes — ring files, folders, registers, staplers, paper clips and general office
+                            stationery are available for local businesses, schools and organizations.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-row rv">
+                    <div class="faq-num">05</div>
+                    <div class="faq-content">
+                        <button class="faq-q" onclick="toggleFaq(this)">
+                            Do you stock art and craft materials? <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="faq-a">
+                            We carry sketchbooks, poster colors, water paints, brushes, color pencils, crayons
+                            and craft sheets for school projects and creative work.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT / VISIT ===== -->
+    <section class="section" id="visit" style="background: var(--sand-deep);">
+        <div class="container">
+            <div class="head center rv">
+                <span class="eyebrow">Visit or Reach Out</span>
+                <h2>Contact Say Book Shop</h2>
+                <p>Drop by the shop, give us a call, or send a WhatsApp message — whichever is easiest for you.</p>
+            </div>
+
+            <div class="contact-wrap">
+                <!-- Info (no images) -->
+                <div class="info-card rv">
+                    <h3>Say Book Shop</h3>
+                    <p class="sub">Central Commercial Area, Bahadurabad, Karachi</p>
+
+                    <div class="info-line">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h5>Address</h5>
+                            <p>Central Commercial Area, Bahadurabad,<br>BMCHS Sharafabad, Karachi, Sindh, Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="info-line">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h5>Phone</h5>
+                            <p><a href="tel:+923135851808">0313 585 1808</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-line">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <h5>WhatsApp</h5>
+                            <p><a href="https://wa.me/923135851808" target="_blank" rel="noopener">wa.me/923135851808</a></p>
+                        </div>
+                    </div>
+
+                    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;">
+                        <a href="https://wa.me/923135851808" target="_blank" rel="noopener" class="btn btn-wa" style="flex:1; min-width:150px;">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="tel:+923135851808" class="btn btn-clay" style="flex:1; min-width:150px;">
+                            <i class="fa-solid fa-phone"></i> Call Shop
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form (no images) -->
+                <div class="form-card rv">
+                    <h3>Send a Message</h3>
+                    <p class="sub">Write your book or stationery requirement and we'll follow up.</p>
+
+                    <div class="notice" id="formNotice"></div>
+
+                    <form id="contactForm" onsubmit="submitContact(event)">
+                        <div class="field" style="margin-bottom:16px;">
+                            <label for="cName">Your Name</label>
+                            <input type="text" id="cName" placeholder="Full name" required>
+                        </div>
+
+                        <div class="field" style="margin-bottom:16px;">
+                            <label for="cPhone">Phone / WhatsApp</label>
+                            <input type="tel" id="cPhone" placeholder="03XX XXXXXXX" required>
+                        </div>
+
+                        <div class="field" style="margin-bottom:22px;">
+                            <label for="cMsg">Your Requirement</label>
+                            <textarea id="cMsg" rows="4" placeholder="Mention books, notebooks, pens or any stationery items you need..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-ink" style="width:100%; padding:16px;">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="foot-grid">
+                <div class="foot-brand">
+                    <a href="#top" class="logo">
+                        <span class="logo-mark"><i class="fa-solid fa-feather-pointed"></i></span>
+                        Say Book Shop
+                    </a>
+                    <p>Books, notebooks, writing materials and school &amp; office stationery at Central Commercial Area, Bahadurabad, Karachi.</p>
+                </div>
+
+                <div class="foot-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#shelves">Collection</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#builder">Inquiry Builder</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="foot-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#shelves" onclick="applyFilter('books')">Books</a></li>
+                        <li><a href="#shelves" onclick="applyFilter('notebooks')">Notebooks</a></li>
+                        <li><a href="#shelves" onclick="applyFilter('writing')">Pens &amp; Writing</a></li>
+                        <li><a href="#shelves" onclick="applyFilter('school')">School Supplies</a></li>
+                        <li><a href="#shelves" onclick="applyFilter('office')">Office Stationery</a></li>
+                    </ul>
+                </div>
+
+                <div class="foot-col">
+                    <h4>Find Us</h4>
+                    <p style="line-height:1.8;">
+                        Say Book Shop<br>
+                        Central Commercial Area, Bahadurabad,<br>
+                        BMCHS Sharafabad, Karachi, Pakistan<br>
+                        Phone: <a href="tel:+923135851808">0313 585 1808</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="foot-bottom">
+                <span>&copy; <span id="yr"></span> Say Book Shop. All rights reserved.</span>
+                <span>Bahadurabad · Karachi · Pakistan</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-card">
+            <button class="lightbox-x" onclick="closeLightboxDirect()" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <img id="lbImg" src="" alt="Preview">
+            <div class="lightbox-body">
+                <h3 id="lbTitle"></h3>
+                <p id="lbDesc"></p>
+                <a id="lbWa" href="#" target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;">
+                    <i class="fa-brands fa-whatsapp"></i> Inquire About This
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* ===== YEAR ===== */
+        document.getElementById('yr').textContent = new Date().getFullYear();
+
+        /* ===== HEADER SCROLL ===== */
+        const header = document.getElementById('siteHeader');
+        const toTop  = document.getElementById('toTop');
+
+        window.addEventListener('scroll', () => {
+            const y = window.scrollY;
+            header.classList.toggle('stuck', y > 40);
+            toTop.classList.toggle('show', y > 400);
+            highlightNav();
+        });
+
+        /* ===== SCROLL REVEAL ===== */
+        const revealEls = document.querySelectorAll('.rv');
+        const revealObs = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('in'), (i % 6) * 70);
+                    revealObs.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+        revealEls.forEach(el => revealObs.observe(el));
+
+        /* ===== MOBILE DRAWER ===== */
+        const drawer   = document.getElementById('drawer');
+        const drawerBg = document.getElementById('drawerBg');
+        function openDrawer() {
+            drawer.classList.add('show');
+            drawerBg.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeDrawer() {
+            drawer.classList.remove('show');
+            drawerBg.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+        document.getElementById('burger').addEventListener('click', openDrawer);
+
+        /* ===== CATEGORY FILTER ===== */
+        function applyFilter(cat) {
+            const items = document.querySelectorAll('#collectionGrid .item');
+            const chips = document.querySelectorAll('.chip');
+
+            chips.forEach(c => {
+                c.classList.remove('on');
+                if (c.dataset.filter === cat) c.classList.add('on');
+            });
+
+            items.forEach(item => {
+                const cats = item.dataset.cat || '';
+                const show = (cat === 'all') || cats.includes(cat);
+                if (show) {
+                    item.classList.remove('hidden');
+                    setTimeout(() => item.classList.add('in'), 30);
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        /* ===== WHATSAPP HELPERS ===== */
+        const WA_NUMBER = '923135851808';
+
+        function inquire(itemName) {
+            const msg = `Assalam-o-Alaikum Say Book Shop, I would like to inquire about: ${itemName}. Please share availability and pricing.`;
+            window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+        }
+
+        function sendBuilder(e) {
+            e.preventDefault();
+            const cat   = document.getElementById('bCat').value;
+            const item  = document.getElementById('bItem').value.trim();
+            const qty   = document.getElementById('bQty').value;
+            const note  = document.getElementById('bNote').value.trim();
+
+            let text = `Assalam-o-Alaikum Say Book Shop,\n\nI would like to inquire:\n• Category: ${cat}\n• Item: ${item}\n• Quantity: ${qty}`;
+            if (note) text += `\n• Notes: ${note}`;
+
+            window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+        }
+
+        /* ===== FAQ ===== */
+        function toggleFaq(btn) {
+            const row = btn.closest('.faq-row');
+            const isOpen = row.classList.contains('open');
+            document.querySelectorAll('.faq-row').forEach(r => r.classList.remove('open'));
+            if (!isOpen) row.classList.add('open');
+        }
+
+        /* ===== CONTACT FORM ===== */
+        function submitContact(e) {
+            e.preventDefault();
+            const name  = document.getElementById('cName').value.trim();
+            const phone = document.getElementById('cPhone').value.trim();
+            const msg   = document.getElementById('cMsg').value.trim();
+            const notice = document.getElementById('formNotice');
+
+            if (!name || !phone || !msg) return;
+
+            notice.className = 'notice ok';
+            notice.innerHTML = `<i class="fa-solid fa-circle-check"></i> Thank you, ${name}! Your message has been noted. For an instant reply, please also message us on WhatsApp.`;
+            document.getElementById('contactForm').reset();
+
+            // Optional: also open WhatsApp with the message
+            const waText = `Assalam-o-Alaikum Say Book Shop,\n\nName: ${name}\nPhone: ${phone}\nRequirement: ${msg}`;
+            setTimeout(() => {
+                window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waText)}`, '_blank', 'noopener');
+            }, 600);
+        }
+
+        /* ===== LIGHTBOX ===== */
+        const lightbox = document.getElementById('lightbox');
+        function openLightbox(src, title, desc) {
+            document.getElementById('lbImg').src = src;
+            document.getElementById('lbTitle').textContent = title;
+            document.getElementById('lbDesc').textContent = desc;
+            const msg = `Assalam-o-Alaikum Say Book Shop, I'd like to inquire about: ${title}.`;
+            document.getElementById('lbWa').href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+            lightbox.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox(e) {
+            if (e.target.id === 'lightbox') closeLightboxDirect();
+        }
+        function closeLightboxDirect() {
+            lightbox.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+
+        /* ===== NAV HIGHLIGHT ===== */
+        function highlightNav() {
+            const sections = document.querySelectorAll('section[id]');
+            const links = document.querySelectorAll('.menu a');
+            let current = '';
+            sections.forEach(s => {
+                if (window.scrollY >= s.offsetTop - 160) current = s.id;
+            });
+            links.forEach(l => {
+                l.classList.remove('on');
+                if (l.getAttribute('href') === '#' + current) l.classList.add('on');
+            });
+        }
+
+        /* ===== SMOOTH SCROLL (offset for fixed header) ===== */
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function (e) {
+                const id = this.getAttribute('href');
+                if (id === '#' || id.length < 2) return;
+                const target = document.querySelector(id);
+                if (!target) return;
+                e.preventDefault();
+                const offset = header.offsetHeight + 10;
+                const pos = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top: pos, behavior: 'smooth' });
+            });
+        });
+
+        highlightNav();
+    </script>
+</body>
+</html>
